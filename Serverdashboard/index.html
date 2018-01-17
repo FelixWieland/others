@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Serverstatus</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="fw-add-container">
+      <div id="fw-add-server-container">
+        <div class="fw-add-server-container-div">
+          <label for="fw-add-input-servername">Servername</label>
+          <input type="text" id="fw-add-input-servername" name="" value="" autocomplete="off" placeholder="z. B. SPServer01">
+          <label for="fw-add-input-ip">IP-Adresse</label>
+          <input type="text" id="fw-add-input-ip" name="" value="" autocomplete="off" placeholder="URL oder IP">
+
+          <label for="fw-add-input-low">Low</label>
+          <input type="text" id="fw-add-input-low" name="" value="40">
+          <label for="fw-add-input-medium">Medium</label>
+          <input type="text" id="fw-add-input-medium" name="" value="70">
+          <label for="fw-add-input-high">High</label>
+          <input type="text" id="fw-add-input-high" name="" value="100">
+
+          <button id="fw-add-server-container-div-addbtn" type="button" name="button">Hinzufügen</button>
+        </div>
+      </div>
+      <div id="fw-existent-servers">
+
+      </div>
+    </div>
+
+    <div id="fw-add-server" class="fw-left-top-addbtn">
+      +
+    </div>
+    <div id="fw-msg-box">
+      <span id="fw-msg-box-ico" class="glyphicon" aria-hidden="true"></span>
+      <p id="fw-msg-box-msg"></p>
+    </div>
+    <div id="fw-server-dashboard" class="container-fluid">
+      <div class="spinner"></div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pingrequester.js"></script>
+    <script src="js/clickhandler.js"></script>
+  </body>
+</html>
